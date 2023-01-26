@@ -27,7 +27,7 @@ const Loader: React.FC<{
         </div>
         <div className='spoke'></div>
       </div>
-        <h4 className='align-center text-md text-gray-700 font-semibold'>{text}</h4>
+        <h4 className='align-center text-md text-gray-700 font-bold text-center transition-all'>{text}</h4>
     </div>
   )
 }

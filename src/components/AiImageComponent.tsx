@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import SmileFace from '../Icons/SmileFace'
 import Loader from './Loader'
 
 export const AiImageComponent = () => {
@@ -65,7 +64,7 @@ export const AiImageComponent = () => {
           onClick={onClick}
           disabled={loading}>
           <span className='block box-border border-2 border-black rounded-xl py-3 px-6 text-black -translate-y-[0.2em] transition-transform bg-white text-lg '>
-            Send prompt
+            {loading ? 'Generating your image...' : 'Send prompt'}
           </span>
         </button>
       </div>
@@ -76,7 +75,13 @@ export const AiImageComponent = () => {
         </div>
       ) : (
         <div className='h-full w-1/2 flex justify-center items-center md:h-screen'>
-          <Loader text='Your image will appear here!' />
+          <Loader
+            text={
+              loading
+                ? 'Generating your image, please be patient'
+                : 'Your image will appear here!'
+            }
+          />
         </div>
       )}
     </section>
