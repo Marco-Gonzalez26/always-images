@@ -49,7 +49,7 @@ export const AiImageComponent = () => {
   }
 
   return (
-    <section className='flex w-full h-full text-2xl justify-between items-center gap-5 flex-col relative md:pl-8 md:flex-row  md:h-screen py-4 md:py-0'>
+    <section className='flex w-full h-screen text-2xl justify-between items-center gap-5 flex-col-reverse relative md:pl-8 md:flex-row  md:h-screen py-4 md:py-0'>
       <div className='flex flex-col gap-5 w-full p-4 md:w-1/2'>
         <label htmlFor='#input' className='font-bold '>
           Write your prompt!
