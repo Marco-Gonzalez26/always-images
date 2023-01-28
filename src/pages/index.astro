@@ -1,18 +1,17 @@
 ---
 import Layout from '../layouts/Layout.astro'
-import Card from '../components/Card.astro'
+
 import Home from '../components/Home.astro'
+
 import { AiImageComponent } from '../components/AiImageComponent'
-import Starfield from '../components/Starfield.astro';
-import HyperDrive from '../components/HyperDrive.astro';
+
+import { AiImageRedesing } from '../components/AiImageRedesing'
 ---
 
 <Layout title='AlwaysImages'>
-
   <main>
     <Home />
-
     <AiImageComponent client:visible />
+    <!-- <AiImageRedesing client:visible /> -->
   </main>
 </Layout>
-

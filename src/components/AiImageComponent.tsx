@@ -53,7 +53,7 @@ export const AiImageComponent = () => {
       className='flex w-full  text-2xl justify-between items-center gap-5 flex-col-reverse relative min-h-screen md:pl-8 md:flex-row  py-4 md:py-0'
       id='generate-image'>
       <div className='flex flex-col gap-5 w-full p-4 md:w-1/2'>
-        <h2 className='font-black text-zinc-800 tracking-wider underline underline-offset-8 text-6xl pb-10'>
+        <h2 className='font-black text-zinc-800 tracking-wider underline underline-offset-8 text-5xl md:text-6xl pb-10'>
           Generate an image!
         </h2>
         <label htmlFor='#input' className='font-bold '>
@@ -76,7 +76,7 @@ export const AiImageComponent = () => {
       </div>
 
       {!loading && imageUrl ? (
-        <div className=' w-full  -right-10 top-0 bottom-0  flex flex-col justify-center items-center text-white  relative md:w-1/2 md:min-h-full  '>
+        <div className=' w-full top-0 bottom-0  flex flex-col justify-center items-center text-white  relative md:w-1/2 md:min-h-full  '>
           <img className=' w-full object-contain' src={imageUrl} />
         </div>
       ) : (
