@@ -1,0 +1,10 @@
+---
+import Starfield from './Starfield.astro'
+import { AiImageRedesing } from './AiImageRedesing'
+---
+
+<section
+  class='h-screen relative w-full flex flex-col justify-center items-between'>
+  <Starfield noGradient />
+  <AiImageRedesing client:visible/>
+</section>
